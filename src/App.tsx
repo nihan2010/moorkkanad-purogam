@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/moorkkanad-purogam">
         <AuthProvider>
           <Routes>
             <Route path="/" element={<Index />} />
