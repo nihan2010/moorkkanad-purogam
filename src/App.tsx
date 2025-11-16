@@ -12,6 +12,8 @@ import Centers from "./pages/Centers";
 import Guide from "./pages/Guide";
 import Announcements from "./pages/Announcements";
 import Contact from "./pages/Contact";
+import Complaints from "./pages/Complaints";
+import ComplaintNew from "./pages/ComplaintNew";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +37,22 @@ const App = () => (
               element={
                 <ProtectedRoute>
                   <Dashboard />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/complaints" 
+              element={
+                <ProtectedRoute>
+                  <Complaints />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/complaints/new" 
+              element={
+                <ProtectedRoute>
+                  <ComplaintNew />
                 </ProtectedRoute>
               } 
             />
